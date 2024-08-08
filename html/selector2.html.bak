@@ -1,0 +1,41 @@
+<html>
+<head>
+<style>
+div
+{
+ background-color:;
+ width:280px;
+ margin:50px;
+ padding:30px;
+ border-top:solid green 50px;
+ border-bottom:solid red 50px;
+ border-top-left-radius:80px;
+ border-bottom-right-radius:80px;
+ }
+ h1
+ {
+  color:blue;
+  font-family:algerian;
+  font-style:italic;
+  font-size:45px
+ }
+p
+{
+ color:yellow;
+ font-family:arial;
+ font-style:italic;
+ font-size:20px;
+}
+</style>
+</head>
+<body>
+<div>
+<h1>HTML</h1>
+<P>HYPER TEXT MARKUP LANGUAGE</P>
+<h1>CSS</h1>
+<P>cascading style sheets</p>
+<h1>java script</h1>
+<p>ITS FOR DESIGN PURPOSE</P>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<body bgcolor="lightgreen">
+<center>
+<form action="reg.asp" >
+<h1 align="center">PERSONAL DETAILS</h1>
+<hr width="300" size="6"color="red">
+NAME:<input type="text"size="50" textholder="name"placeholder="--name--" name="name" required><br><br>
+PASSWORD:<input type="password" size="50"placeholder="--password--" name="password"required><br><br>
+E-MAIL ID:<input type="email"name="email" size="50"placeholder="--e-mail--"required><br><br>
+GENDER:<input type="radio" name="gender"value="male">MALE <input type="radio" name="gender"value="female">FEMALE<br><br>
+CONTACT:<input type="tel" name="phn no" size="50"placeholder="--phone no--" pattern="[0-9]{10}"required>
+<h2>EDUCATIONAL QUALIFICATION</h2>
+<hr width="300" size="6"color="red">
+DEGREE:<select name="qualification" required><option>mathematics<option>physics<option>economics<option>biology</select><br><br>
+ENGINEERING:<select name="branch"required><option>computerscience<option>civil<option>mechanics</select><BR><BR>
+HOBBIES:<INPUT TYPE="CHECKBOX" required>PLAYING CHESS <INPUT TYPE="CHECKBOX">READING BOOKS<BR><BR><BR>
+<H3>ADDRESS</H3>
+<hr width="300" size="6" color="red">
+<TEXTAREA COLS="25"ROWS="6" placeholder="--address--"name="address" required></TEXTAREA><BR><BR>
+ATTACH RESUME:<INPUT TYPE="FILE" name="folder" ><BR><BR><BR>
+<INPUT TYPE="SUBMIT">
+</form>
+</center>
+</body>
+</html>

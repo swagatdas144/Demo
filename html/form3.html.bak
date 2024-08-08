@@ -1,0 +1,18 @@
+<html>
+<body bgcolor="wheat">
+<CENTER>
+<form ACTION="REG.ASP">
+<h1 ALIGN="CENTER">NOVELL SERVICES LOGIN</h1>
+USERNAME:&nbsp&nbsp<INPUT TYPE="text" name="user" placeholder="--enter name--"required><BR><BR>
+PASSWORD:&nbsp&nbsp<INPUT TYPE="PASSWORD"name="password"placeholder="--enter password--"required><BR><BR>
+CITY OF<br>
+EMPLOYEMENT:&nbsp&nbsp<INPUT TYPE="TEXT" name="city" placeholder="--city--"required><BR><BR>
+WEB SERVER:&nbsp&nbsp<SELECT name="server"required><OPTION>APACHE WEBSERVER<OPTION>IIS WEBSERVER<OPTION>NGINX WEBSERVER<OPTION>JIGSAW SERVER</SELECT><BR><BR>
+PLEASE SPECIFY<br>YOUR ROLE:&nbsp<INPUT TYPE="RADIO" name="role"required>ADMIN<BR>&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp<INPUT TYPE="RADIO" name="role" value="engineer"required>ENGINEER<BR>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp					&nbsp	&nbsp	&nbsp	&nbsp	&nbsp	&nbsp&nbsp<INPUT TYPE="RADIO"name="role"value="manager"required>MANAGER<BR>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="RADIO" name="role" value="guest"required>GUEST<BR><BR><BR>
+SINGLE SIGN-ON
+TO <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp THE FOLLOWING:&nbsp&nbsp<INPUT TYPE="CHECKBOX"name="sign"value="mail"required>MAIL<BR>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="CHECKBOX"name="sign"value="payroll"required>PAYROLL<BR>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="CHECKBOX"name="sign"value="selfservice"required>SELFSERVICE<BR><BR><BR>
+<BUTTON>LOGIN</BUTTON><INPUT TYPE="RESET">
+</form>
+</CENTER>
+</body>
+</html>

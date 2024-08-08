@@ -1,0 +1,14 @@
+<html>
+<body bgcolor="wheat">
+<h1><u><b><strike>
+HTML
+</u></b></strike></h1>
+<font face="algerian"size="40" color="cyan">
+<P>it stands for <mark>hypertext markup</mark> language</P>
+</font>
+<h1>
+CSS
+</h1>
+<p><marquee behavior="slide"bgcolor="green"text="red">it stands for cascading style sheets</marquee></p>
+</body>
+</html>

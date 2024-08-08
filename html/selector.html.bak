@@ -1,0 +1,26 @@
+<html>
+<head>
+<style>
+*
+{
+ color:red;
+ border-style:solid;
+ background-color:cyan;
+}
+h1
+{
+ color:blue;
+ background-color:yellow;
+ border-color:green;
+}
+</style>
+</head>
+<body>
+<h1 cla>HTML</h1>
+<p>hyper text markup language</p>
+<h1>css</h1>
+<p>cascading stylesheet</p>
+<h1>js</h1>
+<p>javascript</p>
+</body>
+</html>

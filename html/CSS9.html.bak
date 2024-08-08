@@ -1,0 +1,23 @@
+<html>
+<head>	
+<style>
+body
+{
+ background-image:url("https://softauthor.com/wp-content/uploads/2021/08/CSS-Background-Image-Full-Screen-background-size-cover-1024x845.png");
+ background-repeat:repeat;
+ background-position:left top;
+ background-attachment:scroll;
+}
+h1,p
+{
+ color:blue;
+}
+</style>
+</head>
+<body>
+<h1>HTML</h1>
+<P>HYPER TEXT MARKUP LANGUAGE<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></P>
+<h1 style="color:red">CSS</h1>
+<P>CASCADING STYLESHEETghghccccccdjkxrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttrrrrrr<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></P>
+</body>
+</html>

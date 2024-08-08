@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+#demo
+{
+	color:pink;
+	background-color:red;
+	border-style:solid;
+	border-color:yellow;
+}
+h1
+{
+	color:red;
+	background-color:blue;
+	border-style:solid;
+	border-color:green;
+	text-decoration-line:underline;
+	text-decoration-color:wheat;
+
+}
+p
+{
+	color:cyan;
+}
+</style>
+</head>
+<body>
+<h1 style="color:green;">html</h1>
+<p>hypertext markup language</p>
+<h1>css</h1>
+<p>cascading stylesheets</p>
+<h1>js</h1>
+<p id="demo">java script</p>
+</body>
+</html>

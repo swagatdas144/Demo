@@ -1,0 +1,209 @@
+<html>
+<head>
+<link rel="stylesheet" href="F://html/style11.css">
+</head>
+<body><div>
+	<a href="#interface"class="test">INTERFACE</a><br><br>
+	<a href="#abstract class"class="test">ABSTRACT CLASS</a><br><br>
+	<a href="#concrete class"class="test">CONCRETE CLASS</a><br><br>
+	<a href="#compiler activities"class="test">COMPILER ACTIVITIES</a><br><br>
+
+	<a name="interface"><b>what is interface?</b></a></div><br><br>
+	<section>
+	 
+	 <P>The interface in Java is a mechanism to achieve abstraction. There can be only abstract methods in the Java interface, not the method body. It is used to achieve abstraction and multiple inheritances in Java using Interface. In other words, you can say that interfaces can have abstract methods and variables. It cannot have a method body. Java Interface also represents the IS-A relationship.<br>
+
+When we decide on a type of entity by its behavior and not via attribute we should define it as an interface.<br><br>
+<u>Syntax for Java Interfaces</u><br><br>
+interface {<br>
+    // declare constant fields<br>
+    // declare methods that abstract <br>
+    // by default. <br>  
+}<br><br>
+To declare an interface, use the interface keyword. It is used to provide total abstraction. That means all the methods in an interface are declared with an empty body and are public and all fields are public, static, and final by default. A class that implements an interface must implement all the methods declared in the interface. To implement the interface, use the implements keyword.<br><br><br>
+<u>Uses of Interfaces in Java:</u><br><br><br>
+Uses of Interfaces in Java are mentioned below:<br><br>
+
+<ul type="circle"><li>It is used to achieve total abstraction.
+<li>Since java does not support multiple inheritances in the case of class, by using an interface it can achieve multiple inheritances.
+<li>Any class can extend only 1 class, but can any class implement an infinite number of interfaces.
+<li>It is also used to achieve loose coupling.
+<li>Interfaces are used to implement abstraction.</ul> <br><br>
+New Features Added in Interfaces in JDK 8<br><br>
+There are certain features added to Interfaces in JDK 8 update mentioned below:<br>
+
+1. Prior to JDK 8, the interface could not define the implementation. We can now add default implementation for interface methods. This default implementation has a special use and does not affect the intention behind interfaces.<br>
+
+Suppose we need to add a new function to an existing interface. Obviously, the old code will not work as the classes have not implemented those new functions. So with the help of default implementation, we will give a default body for the newly added functions. Then the old codes will still work.<br><br><br>
+What is Java Interface and Why it's Needed?
+Lesson 14 of 43By Ravikiran A S
+
+Last updated on Oct 25, 2023112512
+What is Java Interface and Why it's Needed?
+PreviousNext
+Table of Contents
+What is Interface in Java?Need for Interface in JavaJava Interface SyntaxJava Interface ExampleNesting Interface in JavaView More
+Reviewed and fact-checked by Sayantoni Das
+Ever wondered how to implement Interface in Java? The interface in Java is a pinnacle of Object-Oriented Programming in Java. It achieves a whole new level of data abstraction and exponentially improves code readability and project performance.
+
+What is Interface in Java?<br>
+Java Interface<br>
+
+In Java, an interface specifies the behavior of a class by providing an abstract type. As one of Java's core concepts, abstraction, polymorphism, and multiple inheritance are supported through this technology. Interfaces are used in Java to achieve abstraction. By using the implements keyword, a java class can implement an interface.<br><br>
+
+In general terms, an interface can be defined as a container that stores the signatures of the methods to be implemented in the code segment. It improves the levels of Abstraction.<br><br>
+
+Following the brief introduction to Interface in Java, we will now be exploring why we need it and why we should prefer it over the conventional way of using an abstract class.<br><br>
+Important Points about Interface in Java
+interface is the code that is used to create an interface in java.
+
+We can’t instantiate an interface in java.<br><br>
+
+
+<ol type="A" start="1"><li>Interface provides absolute abstraction, in last post we learned about abstract classes in java to provide abstraction but abstract classes can have method implementations but interface can’t.<br><br>
+
+<li>Interfaces can’t have constructors because we can’t instantiate them and interfaces can’t have a method with body.<br>
+
+<li>By default any attribute of interface is public, static and final, so we don’t need to provide access modifiers to the attributes but if we do, compiler doesn’t complain about it either.<br>
+
+<li>By default interface methods are implicitly abstract and public, it makes total sense because the method don’t have body and so that subclasses can provide the method implementation.<br>
+
+<li>An interface can’t extend any class but it can extend another interface. public interface Shape extends Cloneable{} is an example of an interface extending another interface. Actually java provides multiple inheritance in interfaces, what is means is that an interface can extend multiple interfaces.<br>
+
+<li>implements keyword is used by classes to implement an interface.</ol><br><br>
+
+
+A class implementing an interface must provide implementation for all of its method unless it’s an abstract class. For example, we can implement above interface in abstract class like this: ShapeAbs.java<br>
+package com.journaldev.design;
+
+public abstract class ShapeAbs implements Shape {<br><br>
+
+	@Override<br>
+	public double getArea() {<br>
+		// TODO Auto-generated method stub<br>
+		return 0;<br>
+	}<br>
+
+}<br><br><br><br>
+
+
+
+
+
+</P></section>
+	 <a name="abstract class"><b>what is abstract class?</b></a><br><br>
+	 <section>
+	 
+	 <P>A class which is declared with the abstract keyword is known as an abstract class in Java. It can have abstract and non-abstract methods (method with the body).<br><br>
+
+Before learning the Java abstract class, let's understand the abstraction in Java first.<br><br>
+Data abstraction is the process of hiding certain details and showing only essential information to the user.<br>
+Abstraction can be achieved with either abstract classes or interfaces (which you will learn more about in the next chapter).<br>
+
+The abstract keyword is a non-access modifier, used for classes and methods:<br><br>
+
+Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).<br><br>
+
+Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).<br>
+An abstract class can have both abstract and regular methods:<br><br>
+
+abstract class Animal {<br>
+  public abstract void animalSound();<br>
+  public void sleep() {<br>
+    System.out.println("Zzz");<br>
+  }<br>
+}<br>
+Abstract classes are similar to interfaces. You cannot instantiate them, and they may contain a mix of methods declared with or without an implementation. However, with abstract classes, you can declare fields that are not static and final, and define public, protected, and private concrete methods. With interfaces, all fields are automatically public, static, and final, and all methods that you declare or define (as default methods) are public. In addition, you can extend only one class, whether or not it is abstract, whereas you can implement any number of interfaces.<br><br>
+
+Which should you use, abstract classes or interfaces?<br><br>
+
+* &nbsp;Consider using abstract classes if any of these statements apply to your situation:<br><br>
+<ul type="square"><li>You want to share code among several closely related classes.<br>
+<li>You expect that classes that extend your abstract class have many common methods or fields, or require access modifiers other than public (such as protected and private).<br>
+<li>You want to declare non-static or non-final fields. This enables you to define methods that can access and modify the state of the object to which they belong.</ul><br><br>
+Consider using interfaces if any of these statements apply to your situation:<br><br>
+<ul type="disc"><li>You expect that unrelated classes would implement your interface. For example, the interfaces Comparable and Cloneable are implemented by many unrelated classes.<br>
+<li>You want to specify the behavior of a particular data type, but not concerned about who implements its behavior.<br>
+<li>You want to take advantage of multiple inheritance of type.<br><br><br>
+An example of an abstract class in the JDK is AbstractMap, which is part of the Collections Framework. Its subclasses (which include HashMap, TreeMap, and ConcurrentHashMap) share many methods (including get, put, isEmpty, containsKey, and containsValue) that AbstractMap defines.<br><br>
+
+An example of a class in the JDK that implements several interfaces is HashMap, which implements the interfaces Serializable, Cloneable, and Map<K, V>. By reading this list of interfaces, you can infer that an instance of HashMap (regardless of the developer or company who implemented the class) can be cloned, is serializable (which means that it can be converted into a byte stream; see the section Serializable Objects), and has the functionality of a map. In addition, the Map<K, V> interface has been enhanced with many default methods such as merge and forEach that older classes that have implemented this interface do not have to define.<br><br>
+
+Note that many software libraries use both abstract classes and interfaces; the HashMap class implements several interfaces and also extends the abstract class AbstractMap.<br><br>
+
+An Abstract Class Example<br><br><br>
+In an object-oriented drawing application, you can draw circles, rectangles, lines, Bezier curves, and many other graphic objects. These objects all have certain states (for example: position, orientation, line color, fill color) and behaviors (for example: moveTo, rotate, resize, draw) in common. Some of these states and behaviors are the same for all graphic objects (for example: position, fill color, and moveTo). Others require different implementations (for example, resize or draw). All GraphicObjects must be able to draw or resize themselves; they just differ in how they do it. This is a perfect situation for an abstract superclass. You can take advantage of the similarities and declare all the graphic objects to inherit from the same abstract parent object (for example, GraphicObject) as shown in the following figure.<br><br><br>
+
+
+</P></section>
+	 <a name="concrete class">what is concrete class?</a><br><br>
+	 <section><p>A concrete class is a class that has an implementation for all of its methods. They cannot have any unimplemented methods. It can also extend an abstract class or implement an interface as long as it implements all their methods. It is a complete class and can be instantiated. In other words, we can say that any class which is not abstract is a concrete class. Necessary condition for a concrete class: There must be an implementation for each and every method. Example: The image below shows three classes Shape, Rectangle and Circle. Shape is abstract whereas Rectangle and Circle are concrete and inherit Shape. This is because Rectangle and Circle implement area() method. <br><br>
+	 The Advantages of Concrete Classes<br><br><br>
+	 <ul type="desc"><li>Reusable code is contained into concrete classes, making it simple to construct objects with predetermined behaviour and properties. Because the same class may be created more than once with different data, this encourages code reuse.<br><br>
+<li>Concrete classes are simpler to maintain than abstract classes since they offer comprehensive implementations. Without modifying the entire inheritance structure, any changes or improvements may be applied directly within the class.<br><br>
+<li>Improved Readability: Behaviour and functionality are defined explicitly and clearly via concrete classes. Since developers can now easily access and comprehend the implemented methods, the readability of the code is improved, and ambiguity is decreased.<br><br><br>
+
+Explanation<br><br>
+
+In this example, the Rectangle class represents a concrete class with two private instance variables: length and width. It has a constructor that takes the initial values for length and width as parameters.<br><br>
+
+
+The length and width variables may be accessed and changed using the class's getter and setter methods. By multiplying the length and width, the calculateArea() function determines and returns the area of the rectangle. The perimeter of the rectangle is calculated and returned by the calculatePerimeter() function.<br><br>
+
+
+The aforementioned code produces a Rectangle class object with the default length and width of 5.0 and 3.0, respectively. The rectangle's length, breadth, area, and perimeter are then printed. The new numbers are printed when the length and width have been changed using the setter methods, and the area and perimeter have been recalculated.<br><br>
+
+Conclusion<br><br>
+
+Java's concrete classes are essential for object-oriented programming. They give full implementations of its methods, are immediately instantiated, and make code reuse and maintenance easier. Developers may create and deploy reliable and adaptable Java programmes by effectively knowing the features and advantages of particular classes.<br><br>
+
+
+When you have a precise implementation in mind and wish to provide your class's users a clear contract, keep in mind that concrete classes should be utilised. However, abstract classes or interfaces could be a better choice if you need to provide common traits and behaviours for several subclasses.<br><br>
+
+
+You may use the power of Java's object-oriented capabilities to construct effective and well-structured programmes by learning the idea of concrete classes.<br><br>
+
+	 </p></section>\
+	 <a name="compiler activities"><b>what is compiler activities?</b></a><br><br>
+	 <section>
+	 
+	 <P>
+		A Java virtual machine (JVM) is a virtual machine that enables a computer to run Java programs as well as programs written in other languages that are also compiled to Java bytecode. The JVM is detailed by a specification that formally describes what is required in a JVM implementation. Having a specification ensures interoperability of Java programs across different implementations so that program authors using the Java Development Kit (JDK) need not worry about idiosyncrasies of the underlying hardware platform.<br><br>
+
+The JVM reference implementation is developed by the OpenJDK project as open source code and includes a JIT compiler called HotSpot. The commercially supported Java releases available from Oracle are based on the OpenJDK runtime. Eclipse OpenJ9 is another open source JVM for OpenJDK.<br><br>
+JVM specification<br><br>
+The Java virtual machine is an abstract (virtual) computer defined by a specification. It is a part of the Java runtime environment. The garbage collection algorithm used and any internal optimization of the Java virtual machine instructions (their translation into machine code) are not specified. The main reason for this omission is to not unnecessarily constrain implementers. Any Java application can be run only inside some concrete implementation of the abstract specification of the Java virtual machine.[2]<br><br>
+
+Starting with Java Platform, Standard Edition (J2SE) 5.0, changes to the JVM specification have been developed under the Java Community Process as JSR 924.[3] As of 2006, changes to the specification to support changes proposed to the class file format (JSR 202)[4] are being done as a maintenance release of JSR 924. The specification for the JVM was published as the blue book,[5] whose preface states:<br><br>
+
+We intend that this specification should sufficiently document the Java Virtual Machine to make possible compatible clean-room implementations. Oracle provides tests that verify the proper operation of implementations of the Java Virtual Machine.<br><br><br>
+
+One of Oracle's JVMs is named HotSpot; the other, inherited from BEA Systems, is JRockit. Oracle owns the Java trademark and may allow its use to certify implementation suites as fully compatible with Oracle's specification.<br><br><br>
+
+Class loader<br><br>
+Main article: Java Classloader<br><br>
+One of the organizational units of JVM byte code is a class. A class loader implementation must be able to recognize and load anything that conforms to the Java class file format. Any implementation is free to recognize other binary forms besides class files, but it must recognize class files.<br><br>
+
+The class loader performs three basic activities in this strict order:<br><br>
+
+<ul type="circle"><li>Loading: finds and imports the binary data for a type<br>
+<li>Linking: performs verification, preparation, and (optionally) resolution<br>
+<li>Verification: ensures the correctness of the imported type<br>
+<li>Preparation: allocates memory for class variables and initializing the memory to default values<br>
+<li>Resolution: transforms symbolic references from the type into direct references.<br>
+<li>Initialization: invokes Java code that initializes class variables to their proper starting values.<br><br><br>
+In general, there are three types of class loader: bootstrap class loader, extension class loader and System / Application class loader.<br><br>
+
+Every Java virtual machine implementation must have a bootstrap class loader that is capable of loading trusted classes, as well as an extension class loader or application class loader. The Java virtual machine specification does not specify how a class loader should locate classes.<br><br><br>
+Virtual machine architecture<br><br><br>
+The JVM operates on specific types of data as specified in Java Virtual Machine specifications. The data types can be divided[6] into primitive types (integers, Floating-point, long etc.) and Reference types. The earlier JVM were only 32-bit machines. long and double types, which are 64-bits, are supported natively, but consume two units of storage in a frame's local variables or operand stack, since each unit is 32 bits. boolean, byte, short, and char types are all sign-extended (except char which is zero-extended) and operated on as 32-bit integers, the same as int types. The smaller types only have a few type-specific instructions for loading, storing, and type conversion. boolean is operated on as 8-bit byte values, with 0 representing false and 1 representing true. (Although boolean has been treated as a type since The Java Virtual Machine Specification, Second Edition clarified this issue, in compiled and executed code there is little difference between a boolean and a byte except for name mangling in method signatures and the type of boolean arrays. booleans in method signatures are mangled as Z while bytes are mangled as B. Boolean arrays carry the type boolean[] but use 8 bits per element, and the JVM has no built-in capability to pack booleans into a bit array, so except for the type they perform and behave the same as byte arrays. In all other uses, the boolean type is effectively unknown to the JVM as all instructions to operate on booleans are also used to operate on bytes.) However the newer JVM releases (OpenJDK HotSpot JVM) support 64-bit, so you can either have 32-bit/64-bit JVM on a 64-bit OS. The primary advantage of running Java in a 64-bit environment is the larger address space. This allows for a much larger Java heap size and an increased maximum number of Java Threads, which is needed for certain kinds of large applications; however there is a performance hit in using 64-bit JVM compared to 32-bit JVM.<br><br><br>
+
+The JVM has a garbage-collected heap for storing objects and arrays. Code, constants, and other class data are stored in the "method area". The method area is logically part of the heap, but implementations may treat the method area separately from the heap, and for example might not garbage collect it. Each JVM thread also has its own call stack (called a "Java Virtual Machine stack" for clarity), which stores frames. A new frame is created each time a method is called, and the frame is destroyed when that method exits.<br><br><br>
+
+Each frame provides an "operand stack" and an array of "local variables". The operand stack is used for operands to run computations and for receiving the return value of a called method, while local variables serve the same purpose as registers and are also used to pass method arguments. Thus, the JVM is both a stack machine and a register machine. In practice, HotSpot entirely eliminates every stack besides the native thread/call stack even when running in Interpreted mode, as its Templating Interpreter technically functions as a compiler.
+
+Bytecode instructions
+	 </p></section>
+
+</body>
+</html>
